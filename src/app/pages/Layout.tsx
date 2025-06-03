@@ -1,10 +1,10 @@
 import { LayoutProps } from "rwsdk/router";
-import { SmartBreadcrumbs } from "../components/SmartBreadcrumbs";
+import { Breadcrumbs } from "../components/Breadcrumbs";
 
 const Layout = ({ children, requestInfo }: LayoutProps) => {
   return (
     <div style={{ padding: "20px", background: "yellow" }}>
-      <SmartBreadcrumbs currentUrl={requestInfo?.request.url ?? ""} />
+      <Breadcrumbs currentUrl={requestInfo?.request.url ?? ""} />
       {children}
     </div>
   );
